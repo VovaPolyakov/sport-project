@@ -12,7 +12,7 @@ header{
 }
 
 .container {
-    width: 1000px;
+    width: 1300px;
     margin: 0 auto;
 }
 .header__row {
@@ -56,4 +56,93 @@ header{
     font-size: 16px;
     line-height: 19px;
     color: #2C2C2C;
+}
+
+.info{
+    margin-top: 40px;
+}
+.info__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__content-img{
+    width: 120px;
+    height: 30px;
+    margin-bottom:15px ;
+}
+.info__content {
+    display: flex;
+    flex-direction: column;
+    padding-left:30px;
+
+}
+
+.info__content-title {
+    padding-bottom: 15px;
+}
+.info__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 5px;
+}
+.info__text-little {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #555555
+}
+.info__content-img {
+}
+.info__content-adress {
+    padding-bottom: 15px;
+}
+.info__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+    padding-top: 10px;
+}
+.info__content-worktime {
+    padding-bottom: 15px;
+}
+.info__content-description {
+    padding-bottom: 30px;
+}
+.info__button {
+}
+.choose__btn {
+    background: #FFB84D;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+.chat__btn {
+    
+    background: #F3F3F3;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
 }
