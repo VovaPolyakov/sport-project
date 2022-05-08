@@ -132,9 +132,9 @@ header{
     font-size: 16px;
     line-height: 140%;
     color: #000000;
+    cursor: pointer;
 }
 .chat__btn {
-    
     background: #F3F3F3;
     border-radius: 100px;
     border: none;
@@ -144,5 +144,39 @@ header{
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+.video__lesson {
+    margin-top: 60px;
+
+}
+.video__content {
+
+}
+.video__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: #000000;
+    padding-bottom: 50px;
+}
+.video__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.video {
+}
+
+.video p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
     color: #000000;
 }
