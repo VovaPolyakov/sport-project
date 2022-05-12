@@ -171,12 +171,67 @@ header{
     justify-content: space-between;
 }
 .video {
+    cursor: pointer;
 }
 
 .video p{
+    padding-top: 15px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 29px;
     color: #000000;
+}
+
+.workout{
+    margin-top: 100px;
+}
+
+.workout__content {
+
+}
+.workout__row {
+    display: flex;
+    justify-content: space-between;
+
+}
+.workout__item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 15px;
+}
+.item__time {
+    padding-bottom: 10px;
+    
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+}
+.item__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.item__button {
+    background: #FFFFFF;
+    border: 2px solid #FFB84D;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFB84D;
+    padding: 10px;
+    cursor: pointer;
 }
