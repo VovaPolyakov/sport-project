@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__row">
+                <div class="header_logo">
+                    <img class="header__img"  src="img/bar.svg">
+                    <a href="#"><img src="img/logo.svg"></a>
+                </div>
+                <div class="header__input">
+                    <input type="text" placeholder="Поиск площадок..">
+                </div>
+                <div class="header__button">
+                    <button>Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapp">
+                <div class="left">
+                    <div id="map"></div>
+                </div>
+                <div class="right">
+
+                    <h3>Спортивный клуб при шкорле №89</h3>
+                    <p>Школа №89</p>
+                    <div class="stars">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                    <h3>Спортивный клуб при шкорле №12</h3>
+                    <p>Школа №12</p>
+                    <div class="stars">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 1.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <h2 class="teg">Лучшие площадки возле вас</h2>
+            <div class="sport-club">
+                <div class="sport-info">
+                    <div class="slider"></div>
+                    <div>
+                        <h2>Спортивный клуб при школе №89</h2>
+                        <p class="place">Школа №89</p>
+                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
+                        <button>Выбрать площадку</button>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="stars">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star grey.png" alt="">
+                    </div>
+                    <p>4.3</p>
+                </div>
+            </div>
+
+            <div class="sport-club">
+                <div class="sport-info">
+                    <div class="slider"></div>
+                    <div>
+                        <h2>Спортивный клуб при школе №89</h2>
+                        <p class="place">Школа №89</p>
+                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
+                        <button>Выбрать площадку</button>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="stars">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star grey.png" alt="">
+                    </div>
+                    <p>4.3</p>
+                </div>
+            </div>
+
+            <div class="sport-club">
+                <div class="sport-info">
+                    <div class="slider"></div>
+                    <div>
+                        <h2>Спортивный клуб при школе №89</h2>
+                        <p class="place">Школа №89</p>
+                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
+                        <button>Выбрать площадку</button>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="stars">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star grey.png" alt="">
+                    </div>
+                    <p>4.3</p>
+                </div>
+            </div>
+            
+            <div class="sport-club">
+                <div class="sport-info">
+                    <div class="slider"></div>
+                    <div>
+                        <h2>Спортивный клуб при школе №89</h2>
+                        <p class="place">Школа №89</p>
+                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
+                        <button>Выбрать площадку</button>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="stars">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star grey.png" alt="">
+                    </div>
+                    <p>4.3</p>
+                </div>
+            </div>
+
+            <div class="sport-club">
+                <div class="sport-info">
+                    <div class="slider"></div>
+                    <div>
+                        <h2>Спортивный клуб при школе №89</h2>
+                        <p class="place">Школа №89</p>
+                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
+                        <button>Выбрать площадку</button>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="stars">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star 2.png" alt="">
+                        <img src="img/Star grey.png" alt="">
+                    </div>
+                    <p>4.3</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__row">
+                    <div class="footer__logo">
+                        <img src="img/logoFooter.svg" >
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__info-img">
+                            <img src="img/footerImg.svg">
+                        </div>
+                        <div class="footer__info-text">
+                            2022 Спорт площадки. Все права защищены
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <img src="img/youtube.svg">
+                        <img src="img/facebook.svg">
+                        <img src="img/instagram.svg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7e876f42-e039-46e2-80e7-d386db0519c9" type="text/javascript"></script>
+    <script src="sidebar.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>
