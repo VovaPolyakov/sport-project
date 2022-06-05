@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/sportground.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,15 +15,20 @@
         <div class="container">
             <div class="header__row">
                 <div class="header_logo">
-                    <img class="header__img"  src="img/bar.svg">
-                    <a href="#"><img src="img/logo.svg"></a>
+                    <img class="header__img"  src="../img/bar.svg">
+                    <a href="../index.html"><img src="../img/logo.svg"></a>
                 </div>
                 <div class="header__input">
                     <input type="text" placeholder="Поиск площадок..">
-                    <button><img src="img/search.svg"></button>
+                    <button ><img src="../img/search.svg"></button>
                 </div>
                 <div class="header__button">
-                    <button>Регистрация</button>
+                    <div class="header__sign">
+                        <button>Войти</button>
+                    </div>
+                    <div class="header__login">
+                        <button>Регистрация</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,23 +39,23 @@
                 <div class="info__main">
                     <div class="info__img">
                         <div class="mySlides fade">
-                            <img src="img/sportplayground.jpg" style="width:100%">
+                            <img src="../img/sportplayground.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <img src="img/sportplayground.jpg" style="width:100%">
+                            <img src="../img/sportplayground.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <img src="img/placeImg.png" style="width:100%">
+                            <img src="../img/placeImg.png" style="width:100%">
                         </div>
-                        <a class="prev"><img src="img/prev.svg"></a>
-                        <a class="next"><img src="img/next.svg"></a>
+                        <a class="prev"><img src="../img/prev.svg"></a>
+                        <a class="next"><img src="../img/next.svg"></a>
                     </div>
                     <div class="info__content">
                         <div class="info__content-title">
                             <h1 class="info__title">Спортивный клуб при школе №89</h1>
                             <p class="info__text-little">Школа №89</p>
                         </div>
-                        <img class="info__content-img" src="img/starsSvg.svg">
+                        <img class="info__content-img" src="../img/starsSvg.svg">
                         <div class="info__content-adress">
                             <p class="info__text-little">Адрес</p>
                             <p class="info__text">вулиця Недєліна, 1, Дніпро, Дніпропетровська область, Украина, 49000</p>
@@ -72,6 +77,17 @@
                 </div>
             </div>
         </section>
+        <div class="no__active">
+            <div class="chat__content">
+                <div class="chat__title">
+                    <p>Чат площадки</p>
+                </div>
+                <div class="chat__window"></div>
+                <div class="chat__input">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
         <section class="video__lesson">
             <div class="container">
                 <div class="video__content">
@@ -80,15 +96,15 @@
                     </div>
                     <div class="video__row">
                         <div class="video">
-                            <img src="img/video1.png">
+                            <img src="../img/video1.png">
                             <p>Как ездить на велосипеде?</p>
                         </div>
                         <div class="video">
-                            <img src="img/video2.png">
+                            <img src="../img/video2.png">
                             <p>Бег, что важно знать</p>
                         </div>
                         <div class="video">
-                            <img src="img/video3.png">
+                            <img src="../img/video3.png">
                             <p>5 минутная разминка</p>
                         </div>
                     </div>
@@ -106,7 +122,7 @@
                                 15 мин
                             </div>
                             <div class="item__title">Железный человек</div>
-                            <button class="item__button">Начать тренеровку</button>
+                            <a href="../workout/workout.html"><button class="item__button">Начать тренеровку</button></a>
                         </div>
                         <div class="workout__item">
                             <div class="item__time">
@@ -114,7 +130,7 @@
                                 15 мин
                             </div>
                             <div class="item__title">Железный человек</div>
-                            <button class="item__button">Начать тренеровку</button>
+                            <a href="../workout/workout.html"><button class="item__button">Начать тренеровку</button></a>
                         </div>
                         <div class="workout__item">
                             <div class="item__time">
@@ -122,7 +138,7 @@
                                 15 мин
                             </div>
                             <div class="item__title">Железный человек</div>
-                            <button class="item__button">Начать тренеровку</button>
+                            <a href="../workout/workout.html"><button class="item__button">Начать тренеровку</button></a>
                         </div>
                         <div class="workout__item">
                             <div class="item__time">
@@ -130,7 +146,7 @@
                                 15 мин
                             </div>
                             <div class="item__title">Железный человек</div>
-                            <button class="item__button">Начать тренеровку</button>
+                            <a href="../workout/workout.html"><button class="item__button">Начать тренеровку</button></a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +161,7 @@
                     <div class="places__row">
                         <div class="place">
                             <div class="place__img">
-                                <img src="img/placeImg.png">
+                                <img src="../img/placeImg.png">
                             </div>
                             <div class="place__title">
                                 Кафе у папы
@@ -157,7 +173,7 @@
                         </div>
                         <div class="place">
                             <div class="place__img">
-                                <img src="img/placeImg.png">
+                                <img src="../img/placeImg.png">
                             </div>
                             <div class="place__title">
                                 Кафе у папы
@@ -169,7 +185,7 @@
                         </div>
                         <div class="place">
                             <div class="place__img">
-                                <img src="img/placeImg.png">
+                                <img src="../img/placeImg.png">
                             </div>
                             <div class="place__title">
                                 Кафе у папы
@@ -181,7 +197,7 @@
                         </div>
                         <div class="place">
                             <div class="place__img">
-                                <img src="img/placeImg.png">
+                                <img src="../img/placeImg.png">
                             </div>
                             <div class="place__title">
                                 Кафе у папы
@@ -201,26 +217,26 @@
             <div class="footer__content">
                 <div class="footer__row">
                     <div class="footer__logo">
-                        <img src="img/logoFooter.svg" >
+                        <img src="../img/logoFooter.svg" >
                     </div>
                     <div class="footer__info">
                         <div class="footer__info-img">
-                            <img src="img/footerImg.svg">
+                            <img src="../img/footerImg.svg">
                         </div>
                         <div class="footer__info-text">
                             2022 Спорт площадки. Все права защищены
                         </div>
                     </div>
                     <div class="footer__social">
-                        <img src="img/youtube.svg">
-                        <img src="img/facebook.svg">
-                        <img src="img/instagram.svg">
+                        <img src="../img/youtube.svg">
+                        <img src="../img/facebook.svg">
+                        <img src="../img/instagram.svg">
                     </div>
 
                 </div>
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="sportground.js"></script>
 </body>
 </html>

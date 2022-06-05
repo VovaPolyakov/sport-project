@@ -59,9 +59,31 @@ header{
     color: #555555;
 }
 .header__button{
-    width: 18%;
+    display: flex;
+    width: 30%;
 }
-.header__button button{
+.header__sign{
+    width: 100%;
+    margin-right: 15px;
+
+  }
+.header__login{
+    width: 100%;
+}
+.header__sign button{
+    background: #FFB84D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2C2C2C;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+  }
+.header__login button{
     background: #FFFFFF;
     border-radius: 38px;
     border: none;
@@ -76,7 +98,7 @@ header{
     cursor: pointer;
     transition: 0.7s;
 }
-.header__button button:hover{
+.header__login button:hover{
     background: #adadad;
 }
 .info{
@@ -215,7 +237,53 @@ header{
 .chat__btn:hover{
     background: #b4b4b4;
 }
-
+.no__active{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.chat{
+    width: 300px;
+    background-color: #eba640;
+    height: 500px;
+    border-radius:10px ;
+}
+.chat__content{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat__title{
+    text-align: center;
+    padding: 10px 0;
+}
+.chat__title p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+    padding-top: 10px;
+}
+.chat__window{
+    background-color: white;
+    height: 400px;
+    margin: 0 10px;
+    border-radius: 5px;
+    width: 290px;
+}
+.chat__input{
+    margin-bottom: 5px;
+}
+.chat__input input{
+    width: 290px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
 
 .video__lesson {
     margin-top: 60px;
@@ -477,7 +545,7 @@ footer{
     }
 }
 @media(max-width:936px){
-    .header__button button{
+    .header__sign button{
         width: 130px;
     }
     .video__title{
@@ -492,10 +560,15 @@ footer{
     }
 }
 @media(max-width:802px){
+
     .header__input{
         width: 180px;
     }
-    .header__button{
+    .header__sign{
+        margin: 10px 0;
+        margin-right: 15px;
+    }
+    .header__login{
         margin: 10px 0;
     }
     .footer__row{
@@ -520,10 +593,19 @@ footer{
         margin-top: 20px;
     }
     .header__button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__sign{
+        margin-top: 20px;
+        width: 180px;
+        margin-right: 0;
+    }
+    .header__login{
         margin-top: 20px;
         width: 180px;
     }
-    .header__button button{
+    .header__sign button{
         width: 180px;
     }
     .info__button{

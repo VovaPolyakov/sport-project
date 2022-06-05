@@ -31,5 +31,14 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
+let button = document.querySelector('.chat__btn')
+
+
+button.addEventListener('click',function(event){
+    
+})
+
+
+
 
 
