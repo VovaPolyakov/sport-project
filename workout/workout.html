@@ -11,11 +11,42 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="popupe" class="popupe">
+        <div class="popupe-content">
+            <div class="popupe-title">
+                <h2>Зарегистрироваться</h2>
+                <button class="popupe-close"><img src="../img/close.png"></button>
+            </div>
+            <div class="popupe__container">
+                <div class="Tea">
+                    <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label>
+                    <label>Пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Повторите пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Логин<input type="name" name="name" placeholder="Матвей"></label>
+                    <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup__title">
+                <h3>Вход</h3>
+                <button class="popup-close"><img src="../img/close.png" ></button>
+            </div>
+            <div class="popup__container">
+                <div class="task">
+                   <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label> 
+                   <label>Пароль<input type="text" name="password" placeholder="***************"></label> 
+                    <button type="button" class="btn btn-primary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header__row">
                 <div class="header_logo">
-                    <img class="header__img"  src="../img/bar.svg">
                     <a href="../index.html"><img src="../img/logo.svg"></a>
                 </div>
                 <div class="header__input">
@@ -43,15 +74,7 @@
             <p>50 приседаний</p>
             <div class="wrapper">
                 <div class="wrapper1"><img src="123\img\i.jpeg" alt=""></div>
-                <video src="https://www.youtube.com/watch?v=ZMBp84joHQY" width="700" height="400" controls>
-            </div>
-            <div>
-                <video id="myvideo" width="480" height="270" poster="poster.gif" >
-                    <video src="https://www.youtube.com/watch?v=ZMBp84joHQY"></video> 
-                </video>
-            </div>
-            <div id="controls">
-        
+                <video src="https://ucarecdn.com/0a6c9ef4-6c72-4cf3-a998-65a25d2c676c/video1.mp4" width="700" height="400" controls>
             </div>
         </div>
     </section>
@@ -59,29 +82,18 @@
         <h1 class="step2">Шаг 2</h1>
         <p>15 отжиманий</p>
         <div class="wrapper">
-            <video src="https://www.youtube.com/watch?v=ZMBp84joHQY width="700" height="400" controls>
-        </div>
-        <div id="controls">
-    
+            <video src="https://ucarecdn.com/98141e86-1774-4620-8b3d-1d124a21b343/video7.mp4" width="700" height="400" controls></video>
         </div>
     </main>
     <aside>
         <h1 class="step3">Шаг 3</h1>
         <p>И бег</p>
         <div class="wrapper">
-            <video src="https://www.youtube.com/watch?v=ZMBp84joHQY" width="700" height="400" controls>
-        </div>
-        <div>
-            <video id="myvideo" width="480" height="270" poster="poster.gif" >
-                <video src="https://www.youtube.com/watch?v=ZMBp84joHQY"></video>
-            </video>
-        </div>
-        <div id="controls">
-    
+            <video src="https://ucarecdn.com/0a6c9ef4-6c72-4cf3-a998-65a25d2c676c/video1.mp4" width="700" height="400" controls></video>
         </div>
     </aside>
     <footer>
-        <div class="container">
+        <div class="footers container">
             <div class="footer__content">
                 <div class="footer__row">
                     <div class="footer__logo">
@@ -96,14 +108,15 @@
                         </div>
                     </div>
                     <div class="footer__social">
-                        <img src="../img/youtube.svg">
-                        <img src="../img/facebook.svg">
-                        <img src="../img/instagram.svg">
+                        <a href="https://www.youtube.com/"><img src="../img/youtube.svg"></a>
+                        <a href="https://www.facebook.com/"><img src="../img/facebook.svg"></a>
+                        <a href="https://www.instagram.com/"><img src="../img/instagram.svg"></a>
                     </div>
 
                 </div>
             </div>
         </div>
     </footer>
+    <script src="workout.js"></script>
 </body>
 </html>

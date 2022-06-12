@@ -8,14 +8,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sliders.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="popupe" class="popupe">
+        <div class="popupe-content">
+            <div class="popupe-title">
+                <h2>Зарегистрироваться</h2>
+                <button class="popupe-close"><img src="img/close.png"></button>
+            </div>
+            <div class="popupe__container">
+                <div class="Tea">
+                    <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label>
+                    <label>Пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Повторите пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Логин<input type="name" name="name" placeholder="Матвей"></label>
+                    <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup__title">
+                <h3>Вход</h3>
+                <button class="popup-close"><img src="img/close.png" ></button>
+            </div>
+            <div class="popup__container">
+                <div class="task">
+                   <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label> 
+                   <label>Пароль<input type="text" name="password" placeholder="***************"></label> 
+                    <button type="button" class="btn btn-primary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header__row">
                 <div class="header_logo">
-                    <img class="header__img"  src="img/bar.svg">
                     <a href="#"><img src="img/logo.svg"></a>
                 </div>
                 <div class="header__input">
@@ -39,142 +71,158 @@
                 <div class="left">
                     <div id="map"></div>
                 </div>
-                <div class="right">
+                <div class="sliders right">
+                    <!-- Первый слайдер -->
+                    <div class="sim-slider" id="first">
+                        <ul class="sim-slider-list">
+                            <li><img src="img/screen.jpg" alt="screen"></li>    <!-- это экран -->
+                            <li class="sim-slider-element"><img src="img/bascet1.jpg" alt="1"></li>
+                            <li class="sim-slider-element"><img src="img/dumbels1.jpg" alt="2"></li>
+                        </ul>
+                        <div class="sim-slider-arrow-left"><img src="img/prev.svg" alt=""></div>
+                        <div class="sim-slider-arrow-right"><img src="img/next.svg" alt=""></div>
+                        <div class="sim-slider-dots"></div>
+                    </div>
 
                     <h3>Спортивный клуб при школе №89</h3>
                     <p>Школа №89</p>
-                    <div class="stars">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 5.png" alt="">
+                    <div class="rating" data-total-value="3">
+                        <div class="rating__item" data-item-value="5">★</div>
+                        <div class="rating__item" data-item-value="4">★</div>
+                        <div class="rating__item" data-item-value="3">★</div>
+                        <div class="rating__item" data-item-value="2">★</div>
+                        <div class="rating__item" data-item-value="1">★</div>
                     </div>
+
+                    <!-- Второй слайдер -->
+            
+                    <div class="sim-slider"  id="second">
+                        <ul class="sim-slider-list">
+                            <li><img src="img/screen.jpg" alt="screen"></li>    <!-- это экран -->
+                            <li class="sim-slider-element"><img src="img/мини футбольное поле.jpg" alt="1"></li>
+                            <li class="sim-slider-element"><img src="img/баскет и футбол.jpg" alt="2"></li>
+                        </ul>
+                        <div class="sim-slider-arrow-left"><img src="img/prev.svg" alt=""></div>
+                        <div class="sim-slider-arrow-right"><img src="img/next.svg" alt=""></div>
+                        <div class="sim-slider-dots"></div>
+                    </div>
+
                     <h3>Спортивный клуб при школе №12</h3>
-                    <p>Школа №12</p>
-                    <div class="stars">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 1.png" alt="">
-                        <img src="img/Star 5.png" alt="">
+                    <p class="name">Школа №12</p>
+                    <div class="rating" data-total-value="3">
+                        <div class="rating__item" data-item-value="5">★</div>
+                        <div class="rating__item" data-item-value="4">★</div>
+                        <div class="rating__item" data-item-value="3">★</div>
+                        <div class="rating__item" data-item-value="2">★</div>
+                        <div class="rating__item" data-item-value="1">★</div>
                     </div>
                 </div>
             </div>
             <h2 class="teg">Лучшие площадки возле вас</h2>
             <div class="sport-club">
                 <div class="sport-info">
-                    <div class="slider"></div>
+                    <div class="slider">
+                        <img src="img/cnflbjy yf ekbwt.jpg" alt="" width="300px" >
+                    </div>
                     <div>
-                        <h2>Спортивный клуб при школе №89</h2>
-                        <p class="place">Школа №89</p>
-                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
-                        <a href="sportground/sportground.html"><button>Выбрать площадку</button></a>
+                        <h2 class="name">Стадион</h2>
+                        <p class="place">ул.Маяковского</p>
+                        <p class="addres">ул.Маяковского, 26</p>
+                        <a class="sport-club__button" href="sportground/sportground.html"><button>Выбрать площадку</button></a>
                     </div>
                 </div>
-                <div class="grade">
-                    <div class="stars">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star grey.png" alt="">
-                    </div>
-                    <p>4.3</p>
+                <div class="rating" data-total-value="3">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                 </div>
             </div>
 
             <div class="sport-club">
                 <div class="sport-info">
-                    <div class="slider"></div>
+                    <div class="slider">
+                        <img src="img/баскет около стадика.jpg" alt="" width="300px">
+                    </div>
                     <div>
-                        <h2>Спортивный клуб при школе №89</h2>
-                        <p class="place">Школа №89</p>
-                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
-                        <a href="sportground/sportground.html"><button>Выбрать площадку</button></a>
+                        <h2 class="name">Баскетбольная площадка</h2>
+                        <p class="place">Стадион</p>
+                        <p class="addres">Минск, ул. Маяковского, 26</p>
+                        <a class="sport-club__button"  href="sportground/sportground.html"><button>Выбрать площадку</button></a>
                     </div>
                 </div>
-                <div class="grade">
-                    <div class="stars">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star grey.png" alt="">
-                    </div>
-                    <p>4.3</p>
+                <div class="rating" data-total-value="3">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                 </div>
             </div>
 
             <div class="sport-club">
                 <div class="sport-info">
-                    <div class="slider"></div>
+                    <div class="slider"><img src="img/XXXL.jpg" alt="" width="300px"></div>
                     <div>
-                        <h2>Спортивный клуб при школе №89</h2>
-                        <p class="place">Школа №89</p>
-                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
-                        <a href="sportground/sportground.html"><button>Выбрать площадку</button></a>
+                        <h2 class="name">Стадитон БГМУ</h2>
+                        <p class="place">БГМУ</p>
+                        <p class="addres">Минск, просп. Дзержинского, 87</p>
+                        <a class="sport-club__button" href="sportground/sportground.html"><button>Выбрать площадку</button></a>
                     </div>
                 </div>
-                <div class="grade">
-                    <div class="stars">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star grey.png" alt="">
-                    </div>
-                    <p>4.3</p>
+                <div class="rating" data-total-value="3">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                 </div>
             </div>
             
             <div class="sport-club">
                 <div class="sport-info">
-                    <div class="slider"></div>
+                    <div class="slider">
+                        <img src="img/воркаут площадка на космонавта.jpg" alt="" width="300px">
+                    </div>
                     <div>
-                        <h2>Спортивный клуб при школе №89</h2>
-                        <p class="place">Школа №89</p>
-                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
-                        <a href="sportground/sportground.html"><button>Выбрать площадку</button></a>
+                        <h2 class="name">Workout-площадка</h2>
+                        <p class="place">Парк им. Михаила Павлова</p>
+                        <p class="addres">Беларусь, Минск, Московский район</p>
+                        <a class="sport-club__button" href="sportground/sportground.html"><button>Выбрать площадку</button></a>
                     </div>
                 </div>
-                <div class="grade">
-                    <div class="stars">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star grey.png" alt="">
-                    </div>
-                    <p>4.3</p>
+                <div class="rating" data-total-value="3">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                 </div>
             </div>
 
             <div class="sport-club">
                 <div class="sport-info">
-                    <div class="slider"></div>
+                    <div class="slider"><img src="img/баскет с турниками.jpg" alt="" width="300px"></div>
                     <div>
-                        <h2>Спортивный клуб при школе №89</h2>
-                        <p class="place">Школа №89</p>
-                        <p class="addres">Улица Уличная, 2а, Минск, Минская область</p>
-                        <a href="sportground/sportground.html"><button>Выбрать площадку</button></a>
+                        <h2 class="name">Баскетбольная площадка, воркаут</h2>
+                        <p class="place">Серебрянка-7</p>
+                        <p class="addres">Беларусь, Минск, Ленинский район, микрорайон Серебрянка, Серебрянка-7</p>
+                        <a class="sport-club__button" href="sportground/sportground.html"><button>Выбрать площадку</button></a>
                     </div>
                 </div>
-                <div class="grade">
-                    <div class="stars">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star 2.png" alt="">
-                        <img src="img/Star grey.png" alt="">
-                    </div>
-                    <p>4.3</p>
+                <div class="rating" data-total-value="3">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="footers container">
             <div class="footer__content">
                 <div class="footer__row">
                     <div class="footer__logo">
@@ -189,17 +237,23 @@
                         </div>
                     </div>
                     <div class="footer__social">
-                        <img src="img/youtube.svg">
-                        <img src="img/facebook.svg">
-                        <img src="img/instagram.svg">
+                        <a href="https://www.youtube.com/"><img src="img/youtube.svg"></a>
+                        <a href="https://www.facebook.com/"><img src="img/facebook.svg"></a>
+                        <a href="https://www.instagram.com/"><img src="img/instagram.svg"></a>
                     </div>
 
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/index.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7e876f42-e039-46e2-80e7-d386db0519c9" type="text/javascript"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/panel.js"></script>
+    <script src="js/sliders.js"></script>
+    <script>
+        new Sim("first");
+         new Sim("second"); 
+         </script>
 </body>
 </html>

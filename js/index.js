@@ -1,5 +1,3 @@
-
-
 let login = document.querySelector('.header__sign');
 let popup = document.querySelector('.popup')
 login.addEventListener('click',function(event){
@@ -43,3 +41,24 @@ popupeClose.addEventListener('click',function(event){
 popupClose.addEventListener('click',function(event){
     popup.classList.remove('open-popup')
 })
+
+let items =document.querySelectorAll('.rating__item')
+
+let ratingItemsArray = Array.prototype.slice.call(items)
+
+
+ratingItemsArray.forEach(item => {
+    item.addEventListener('click',() => {
+        item.parentNode.dataset.totalValue =item.dataset.itemValue
+    })
+
+});
+
+
+
+
+
+
+
+
+

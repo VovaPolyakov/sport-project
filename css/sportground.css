@@ -10,6 +10,9 @@ header{
     background-color: #2C2C2C;
     padding: 20px 0 20px 0;
 }
+input{ 
+    outline: none;
+}
 
 .container {
     width: 1300px;
@@ -42,6 +45,7 @@ header{
     background-color: white;
     border: none;
     padding-right:35px ;
+    cursor: pointer;
 }
 
 .header__input input{
@@ -101,6 +105,217 @@ header{
 .header__login button:hover{
     background: #adadad;
 }
+.popup {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    transition: .8s;
+    padding-top: 150px;
+  }
+  .popup__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .last label {
+    border: #DBDBDB solid 1px;
+    display: block;
+    border-radius: 10px;
+    max-width: 540px;
+    padding: 10px 10px 0px 18px;
+    margin-top: 24px;
+  }
+  
+  .task label {
+    border: #DBDBDB solid 1px;
+    display: block;
+    border-radius: 10px;
+    max-width: 540px;
+    padding: 10px 10px 0px 18px;
+    margin-top: 24px;
+  }
+  
+  .Tea label {
+    border: #DBDBDB solid 1px;
+    display: block;
+    border-radius: 10px;
+    max-width: 540px;
+    padding: 10px 10px 0px 18px;
+    margin-top: 24px;
+  }
+  
+  .Tea input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    border: none;
+  }
+  
+  .Tea button {
+    display: block;
+    margin-top: 45px;
+    height: 45px;
+    width: 100%;
+    background-color: #FFB84D;
+    border-radius: 10px;
+    border: none;
+    transition: .8s;
+  }
+  
+  ::placeholder .Tea {
+    color: #8E8E8E;
+  }
+  
+  .popup.open-popup,
+  .popupe.open-popupe,
+  .ppopup.open-ppopup
+  {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  
+  .last div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .book label{
+    width: 45% ;
+    
+  }
+  
+  
+  .task input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    border: none;
+  
+  }
+  
+  .popupe {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    transition: .8s;
+    padding-top: 150px;
+}
+  
+  .task button {
+    display: block;
+    margin-top: 45px;
+    height: 45px;
+    width: 100%;
+    background-color: #FFB84D;
+    border-radius: 10px;
+    border: none;
+    transition: .8s;
+  }
+  
+  .popupe-content {
+    max-width: 500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 15px;
+  }
+  .popupe-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .popup-content {
+    max-width: 500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    position: relative;
+    margin: 70px auto;
+    border-radius: 15px;
+  }
+  
+  .popupe-close {
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .popup-close {
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .last input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-left: -10px;
+    border: none;
+  }
+  
+  .ppopup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  .ppopup-content {
+    max-width: 500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+    margin: 200px auto;
+  }
+  .ppopupe__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .last button {
+    display: block;
+    margin-top: 45px;
+    height: 45px;
+    width: 100%;
+    background-color: #FFB84D;
+    border-radius: 10px;
+    border: none;
+    transition: .8s;
+  }
+  
+  .ppopup-close {
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
 .info{
     margin-top: 100px;
 }
@@ -162,7 +377,7 @@ header{
 }
 
 .info__content-title {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 .info__title {
     font-style: normal;
@@ -173,6 +388,35 @@ header{
     align-items: center;
     color: #000000;
     padding-bottom: 5px;
+}
+
+
+.rating{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 5px;
+}
+.rating__item{
+    font-size: 30px;
+    color: rgb(161, 159, 159);
+    cursor: pointer;
+    margin-right:5px ;
+}
+
+
+.rating__item:hover,
+.rating__item:hover ~ .rating__item{
+    color: #555555;
+}
+
+.rating[data-total-value = "1"] .rating__item:nth-child(n+5),
+.rating[data-total-value = "2"] .rating__item:nth-child(n+4),
+.rating[data-total-value = "3"] .rating__item:nth-child(n+3),
+.rating[data-total-value = "4"] .rating__item:nth-child(n+2),
+.rating[data-total-value = "5"] .rating__item:nth-child(n+1){
+    color: #eba640;
 }
 .info__text-little {
     font-style: normal;
@@ -217,6 +461,7 @@ header{
     cursor: pointer;
     transition: 0.7s;
 }
+
 .choose__btn:hover{
     background: #eba640;
 }
@@ -237,16 +482,19 @@ header{
 .chat__btn:hover{
     background: #b4b4b4;
 }
-.no__active{
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
 .chat{
+    display: none;
+}
+.active{
+    display: block;
     width: 300px;
-    background-color: #eba640;
+    background-color: #555555;
     height: 500px;
     border-radius:10px ;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
 }
 .chat__content{
     display: flex;
@@ -257,15 +505,28 @@ header{
 }
 .chat__title{
     text-align: center;
-    padding: 10px 0;
+    padding-top:10px ;
+}
+.chat-close {
+    background-color:#555555; ;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    padding-top:10px ;
+    cursor: pointer;
+}
+.chat-close img{
+    width: 30px;
+    height: 30px;
 }
 .chat__title p{
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;
-    color: #000000;
-    padding-top: 10px;
+    color: #fff;
 }
 .chat__window{
     background-color: white;
@@ -441,6 +702,7 @@ header{
     padding: 10px;
     margin-top: 20px;
     width: 250px;
+    cursor: pointer;
 }
 
 
@@ -480,6 +742,7 @@ footer{
 .footer__social {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer__social img{
     width: 45px;
@@ -501,6 +764,7 @@ footer{
 }
 
 @media(max-width:1160px){
+
     .container{
         max-width: 80%;
     }
@@ -525,10 +789,16 @@ footer{
     .video{
         width: 70%;
     }
+    .mySlides img{
+        width: 100%;
+    }
 
 }
 
 @media(max-width:1142px){
+    .info__button{
+        display: block;
+    }
     .places__row{
         justify-content: space-around;
         align-items: center;
@@ -558,24 +828,20 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .footer__row{
+        flex-direction: column;
+    }
+    .footer__info-text{
+        margin: 30px 0;
+    }
 }
 @media(max-width:802px){
 
     .header__input{
         width: 180px;
     }
-    .header__sign{
-        margin: 10px 0;
-        margin-right: 15px;
-    }
     .header__login{
         margin: 10px 0;
-    }
-    .footer__row{
-        flex-direction: column;
-    }
-    .footer__info-text{
-        margin: 30px 0;
     }
     .video__title{
         text-align: center;
@@ -583,16 +849,11 @@ footer{
     .workout__title{
         text-align: center;
     }
-}
-@media(max-width:513px){
-    .header__row{
-        flex-direction: column;
-        align-items: center;
-    }
     .header__input{
         margin-top: 20px;
+        width: 300px;
     }
-    .header__button{
+    .header__row{
         flex-direction: column;
         align-items: center;
     }
@@ -604,6 +865,41 @@ footer{
     .header__login{
         margin-top: 20px;
         width: 180px;
+        margin-left: 30px;
+    }
+    .header__sign button{
+        width: 180px;
+    }
+    .header__button{
+        width: 400px;
+        display: flex;
+    }
+
+}
+@media(max-width:513px){
+    .workout__item{
+        align-items: center;
+    }
+    .item__title{
+        text-align: center;
+    }
+    .header__row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__sign{
+        margin-top: 20px;
+        width: 180px;
+        margin-right: 0;
+    }
+    .header__button{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__login{
+        margin-top: 20px;
+        width: 180px;
+        margin-left: 0;
     }
     .header__sign button{
         width: 180px;
@@ -613,5 +909,13 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .header__button{
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .header__input{
+        max-width: 70%;
     }
 }

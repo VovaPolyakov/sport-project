@@ -11,11 +11,42 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="popupe" class="popupe">
+        <div class="popupe-content">
+            <div class="popupe-title">
+                <h2>Зарегистрироваться</h2>
+                <button class="popupe-close"><img src="../img/close.png"></button>
+            </div>
+            <div class="popupe__container">
+                <div class="Tea">
+                    <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label>
+                    <label>Пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Повторите пароль<input type="text" name="password" placeholder="***************"></label>
+                    <label>Логин<input type="name" name="name" placeholder="Матвей"></label>
+                    <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup__title">
+                <h3>Вход</h3>
+                <button class="popup-close"><img src="../img/close.png" ></button>
+            </div>
+            <div class="popup__container">
+                <div class="task">
+                   <label>Email<input type="email" name="email" placeholder="Sportsgrounds@gmail.com"></label> 
+                   <label>Пароль<input type="text" name="password" placeholder="***************"></label> 
+                    <button type="button" class="btn btn-primary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header__row">
                 <div class="header_logo">
-                    <img class="header__img"  src="../img/bar.svg">
                     <a href="../index.html"><img src="../img/logo.svg"></a>
                 </div>
                 <div class="header__input">
@@ -39,13 +70,13 @@
                 <div class="info__main">
                     <div class="info__img">
                         <div class="mySlides fade">
-                            <img src="../img/sportplayground.jpg" style="width:100%">
+                            <img src="../img/парк баскет.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <img src="../img/sportplayground.jpg" style="width:100%">
+                            <img src="../img/воркаут на победителей.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <img src="../img/placeImg.png" style="width:100%">
+                            <img src="../img/мини футбольное поле.jpg" style="width:100%">
                         </div>
                         <a class="prev"><img src="../img/prev.svg"></a>
                         <a class="next"><img src="../img/next.svg"></a>
@@ -55,7 +86,13 @@
                             <h1 class="info__title">Спортивный клуб при школе №89</h1>
                             <p class="info__text-little">Школа №89</p>
                         </div>
-                        <img class="info__content-img" src="../img/starsSvg.svg">
+                        <div class="rating" data-total-value="3">
+                            <div class="rating__item" data-item-value="5">★</div>
+                            <div class="rating__item" data-item-value="4">★</div>
+                            <div class="rating__item" data-item-value="3">★</div>
+                            <div class="rating__item" data-item-value="2">★</div>
+                            <div class="rating__item" data-item-value="1">★</div>
+                        </div>
                         <div class="info__content-adress">
                             <p class="info__text-little">Адрес</p>
                             <p class="info__text">вулиця Недєліна, 1, Дніпро, Дніпропетровська область, Украина, 49000</p>
@@ -77,8 +114,28 @@
                 </div>
             </div>
         </section>
-        <div class="no__active">
+        <div id="ppopup" class="ppopup">
+            <div class="ppopup-content">
+                <div class="ppopupe__title">
+                    <h4>Бронирование Спортивный клуб при школе №89 </h4>
+                    <button class="ppopup-close"><img src="../img/close.png" ></button>
+                </div>
+                <div class="ppopup__container">
+                    <div class="last">
+                        <label>Имя<input type="name" name="name" placeholder="Матвей"></label>
+                        <div class="book">
+                            <label>Дата<input type="date" date="date" placeholder=""></label>
+                            <label>Время<input type="time" name="time" placeholder=""></label>
+                        </div>
+                        <label>Количество человек<input type="number" name="number" placeholder="2 человека"></label>
+                        <button type="button" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
             <div class="chat__content">
+                <button class="chat-close"><img src="../img/close.png" ></button>
                 <div class="chat__title">
                     <p>Чат площадки</p>
                 </div>
@@ -228,9 +285,9 @@
                         </div>
                     </div>
                     <div class="footer__social">
-                        <img src="../img/youtube.svg">
-                        <img src="../img/facebook.svg">
-                        <img src="../img/instagram.svg">
+                        <a href="https://www.youtube.com/"><img src="../img/youtube.svg"></a>
+                        <a href="https://www.facebook.com/"><img src="../img/facebook.svg"></a>
+                        <a href="https://www.instagram.com/"><img src="../img/instagram.svg"></a>
                     </div>
 
                 </div>
